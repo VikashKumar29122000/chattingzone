@@ -1,0 +1,157 @@
+.container{
+   
+}
+html{
+    background: #e5eee6;
+    padding: 0;
+    padding-bottom: 0 !important;
+    /* border: 5px solid brown; */
+/* background: linear-gradient(90deg, rgba(183,230,191,1) 0%, rgba(255,255,255,1) 100%); */
+}
+
+
+.app-name{
+    font-family: 'Do Hyeon',sans-serif;
+    padding: 10px 0 10px 0;
+    color: aliceblue;
+    background:#2a9c67;
+    font-size: 300%;
+}
+.random{
+    font-family: 'Do Hyeon',sans-serif;
+    /* padding: 10px 0 10px 0; */
+    color: aliceblue;
+    background:#2a9c67;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-bottom: 0 ;
+    margin-bottom: 0 !important;
+    /* border: 2px solid red; */
+}
+.main-form{
+    /* background: red; */
+}
+
+input{
+    background: wheat;
+    padding-left:  10px;
+}
+.label-text{
+    color: black !important;
+}
+
+.blockquote{
+    margin-top: 15px;
+    padding-left: 5px;
+    border-color: #2a9c67;
+    
+    /* border: 2px solid blue; */
+}
+.main-body{
+    /* border: 2px solid green; */
+    margin-top: 0 !important;
+    padding-top: 0px;
+    margin-bottom: 0 !important;
+}
+
+.all-chats{
+    border: 1px solid #d5d5d5;
+    min-height:86vh !important;
+    max-height: 86vh !important;
+    overflow: auto;
+    /* min-height: 100vh; */
+    background: #81c784 ;
+    color:white;
+}
+.chat-message{
+    border: 1px solid #d5d5d5;
+    background: 	rgb(241, 235, 223);
+    height: 100%;
+    min-height:86vh !important;
+    max-height: 86vh !important;
+    overflow: auto;
+}
+.input-chat{
+    background: #2e7d32;
+    padding-right: 0 !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    margin-bottom: 0 !important;
+    
+}
+.chat-input{
+    margin-top: 5px !important;
+    /* margin-left: 1px !important; */
+    /* margin-right: 1px !important; */
+    margin-bottom: 0 !important;
+    padding-left: 5px !important;
+    /* padding-right: 25px !important; */
+    /* left: 35px !important; */
+    background: whitesmoke !important;
+
+}
+footer{
+    margin-bottom: 0 !important;
+}
+.room-name{
+    background: #2a9c67;
+    padding:5px 0 5px 0;
+    font-weight: 600;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.each-chat-sender{
+    background: #d5d5d5;
+    border-radius: 0px 15px 15px 30px;
+    padding-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* max-width: 30vh; */
+    padding-left: 8px;
+    margin-right: 48%;
+    /* float: left; */
+}
+.each-chat-reciever{
+    
+    background: #d5d5d5;
+    border-radius: 15px 0px 30px 15px;
+    padding-bottom: 5px;
+    /* max-width: 30vh; */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 52% ;
+    margin-right: auto;
+    /* float: right; */
+}
+
+.message-time{
+
+    margin-top: 3px;
+    color: #615e5e;
+    font-size: 0.90rem;
+    font-weight: 800;
+    
+    margin-left: 5%;
+}
+.message-sender{
+    padding-top: 8px;
+    color: red;
+    font-weight: 800;
+    margin-left: 3%;
+}
+.message-reciever{
+    color: blueviolet;
+    font-weight: 800;
+    margin-left: 5%;
+}
+
+.chat-reciever{
+    margin-left: 5%;
+}
+.message{
+    margin-left: 3%;
+}
+.container-whole-chat{
+    padding-left: 5%;
+    padding-right: 5%;
+}

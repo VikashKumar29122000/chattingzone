@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="shortcut icon" href="../public/ChattingZone.png">
+    <title id="title"></title>
+</head>
+<body>
+
+    <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Chatting Zone</h4>
+      <p>Chatting Zone is a chatting web app where you can join a room a start chatting to other users </p>
+    </div>
+    <div class="modal-footer">
+        <div class=" col s6 offset-s6" style="float:left;font-size: 250%;"> 
+            <a href="https://github.com/VikashKumar29122000/ChattingZone" style="color: black;"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vikash-kumar-997966192/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/ashvik_marku/" style="color: darkred;"><i class="fab fa-instagram"></i></a>
+        </div>
+      <a  class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <!-- -- ----------------------------------------------->
+    <!-- Header design -->
+    <header class="row random">
+        <div class="col s8"><a href="#modal1" class="modal-trigger" style="color: floralwhite;"><p style="margin-top: 0; padding-left: 15px;" class="flow-text"><i class="far fa-comment-dots"></i>&nbsp;Chatting Zone   </p></a></div>
+        <div class="col s4 center-align" style="margin-left: auto; margin-right: auto; margin-top: 10px;"><a href="index.html" style="float: right; font-size: 50%; background: white;" >Leave Room &nbsp;<i class="fas fa-sign-out-alt"></i></a></div>
+    </header>
+
+    <!-- Body Design -->
+    <div class="row main-body">
+        <div class="col s4 l3  all-chats">
+            <div class="container center-align">
+                
+                <div style="margin-top: 20%;">
+                    <h6 class="flow-text" style="color: floralwhite; font-weight: 800;"><i class="fas fa-users"></i>&nbsp;Room Name:</h6>
+                    <h6 class="room-name" id="Room">Room name</h6>
+                </div>
+                <div style="margin-top: 20%;" id="ListUsers">
+                    <h6 class="flow-text" style="color: floralwhite; font-weight: 800;"><i class="fas fa-users"></i>&nbsp;Users</h6>
+                    <ul class="current-room">
+                        <!-- Users int the chat -->
+                        
+
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="col s8 l9 chat-message">
+            <div class=" container-whole-chat " style="margin-top: 25px;">
+                
+                <!-- All chats -->
+                
+            </div>
+           
+        </div>
+    </div>
+    <footer class="row center-align footer">
+        <form class="col s12 input-chat" >
+            <input type="text" class="col s9 chat-input" placeholder="Enter your message" name="Chatmessage" id="msg">
+            <button class="button red accent-4 btn-large col s2" type="submit" style="float: right;">Send&nbsp;<i class="fas fa-paper-plane"></i></button>
+        </form>
+    </footer>
+        
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var options={opacity:0.5}
+    var instances = M.Modal.init(elems, options);
+    });
+    </script>
+</body>
+
+</html>

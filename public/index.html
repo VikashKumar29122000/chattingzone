@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="shortcut icon" href="../public/ChattingZone.png">
+
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+            
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 15px;">
+            <div class="col s12 ">
+                <div class="form center-align">
+                    <h3 class="app-name"><i class="far fa-comment-dots"></i>&nbspChatting Zone</h3>
+                    <form class="main-form row" action="Chatting.html">
+                        <div class="input-field col s12">
+                            <input type="text" id="Username" class="validate " name="Username" required>
+                            <label for="Username" class="label-text">Username</label>
+                            
+                        </div>
+                        <div class="input-field col s12 ">
+                            <select id="Chat-room" name="Room" required>
+                                <option value="">&nbsp</option>
+                                <option value="Technology">Technology</option>
+                                <option value="Food">Food</option>
+                                <option value="Art">Art</option>
+                                <option value="News">News</option>
+                                <option value="Entertainment">Entertainment</option>
+                            </select>
+                            <label for="Chat-room" class="label-text">Room</label>
+                        </div>
+                        <button type="submit" class="waves-effect waves-light btn-large green lighten-2" style="margin-top: 10px;">Join Chat</button>
+                        
+                        
+                    </form>
+                </div>
+                <blockquote class="blockquote" >
+                    Please Choose a Username and Room of your choice to continue.
+                  </blockquote>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var options='hello';
+            var instances = M.FormSelect.init(elems, options);
+        });
+    </script>
+</body>
+</html>
