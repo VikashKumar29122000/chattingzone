@@ -37,14 +37,14 @@ socket.on('roomusers',(users)=>{
 //-----------------------------------------------------------------------
 //Message
 socket.on('message',message=>{
-    console.log(message);
+
     outputMessage(message)
 
     //Scroll Down fixing we need to pass this property to the container having overflow auto
     chatMessages.scrollTop=chatMessages.scrollHeight;
 });
 //---------------------------------------------------------------------
-socket.on('connection',mess=>console.log(mess))
+// socket.on('connection',mess=>console.log(mess))
 
 //Mesage submit
 

@@ -56,9 +56,20 @@
             
         </div>
         <div class="col s8 l9 chat-message">
-            <div class=" container-whole-chat " style="margin-top: 25px;">
+            <div class=" container-whole-chat" style="margin-top: 25px;">
                 
                 <!-- All chats -->
+                <div class="each-chat-sender">
+                        <span class="message-sender">Vikash</span>
+                        <span class="message-time ">12:34</span>
+                        <h6 class="message">${message.message}fffffffffffffffffffffffffffffffffffffffffffffffffff</h6>
+                </div>
+
+                <div class="each-chat-reciever" f >
+                    <span class="message-reciever ">${MessageSender}</span>
+                    <span class="message-time ">${message.time}</span>
+                    <h6 class="chat-reciever " >fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</h6>
+                </div>
                 
             </div>
            
@@ -66,7 +77,7 @@
     </div>
     <footer class="row center-align footer">
         <form class="col s12 input-chat" >
-            <input type="text" class="col s9 chat-input" placeholder="Enter your message" name="Chatmessage" id="msg">
+            <textarea type="text" class="col s9 chat-input" style="resize: none; font-size: large; padding-top: 1%;" placeholder="Enter your message" name="Chatmessage" id="msg"></textarea>
             <button class="button red accent-4 btn-large col s2" type="submit" style="float: right;">Send&nbsp;<i class="fas fa-paper-plane"></i></button>
         </form>
     </footer>
